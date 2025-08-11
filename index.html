@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | KOD20</title>
+    <link rel="stylesheet" href="css/kd.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav id="nav">
+      <div class="container">
+        <div class="menu">
+          <h3 class="nav-brand">KD20</h3>
+          <ul class="nav-menu">
+            <li class="nav-list"><a href="index.html">Home</a></li>
+            <li class="nav-list"><a href="layout/struktur.html">Struktur</a></li>
+            <li class="nav-list"><a href="team.html">Team</a></li>
+            <li class="nav-list"><a href="kd.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Head -->
+    <header id="header">
+      <div class="container">
+        <h1 class="welcome">Welcome to Our Page .....</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <article class="layout">
+        <div class="col1Last1">
+          <h1 id="typing" class="typing-container"></h1>
+        </div>
+
+        <div class="kolom">
+          <span class="caption-logo">
+            KOSTRAD 020 OFFICIAL adalah <strong>komunitas siswa terpelajar</strong> alumni dari kelas MIA D angkatan tahun 2020 <em>SMA Negeri 1 Tongkuno</em>. Dibentuk sebagai wadah silaturahmi dan kebersamaan, komunitas ini bertujuan
+            mempererat hubungan antar anggota setelah masa sekolah. Melalui berbagai kegiatan sosial, reuni, dan proyek kreatif, KOSTRAD 020 <small>(KD20)</small> menjadi simbol solidaritas, nostalgia, dan semangat kebersamaan yang terus
+            hidup meski waktu telah berlalu. <br /><br />
+            <a class="klik">More</a>
+            <a class="klik" href="http://instagram.com/kostrad_020_official/">Social Media</a>
+          </span>
+        </div>
+
+        <div id="gambar-logo" class="kolom">
+          <img class="gambar-logo" src="logo/20210505_211534.png" alt="Logo KD20" />
+        </div>
+      </article>
+      <!-- end container -->
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const text = "KOSTRAD 020 OFFICIAL";
+        const typingElement = document.getElementById("typing");
+
+        let index = 0;
+
+        function type() {
+          if (index < text.length) {
+            typingElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 150); // kecepatan ketik
+          } else {
+            // Hapus kursor setelah selesai jika mau
+            typingElement.style.borderRight = "none";
+          }
+        }
+
+        type();
+      });
+    </script>
+  </body>
+</html>

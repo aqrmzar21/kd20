@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KD20 | History</title>
+    <link rel="stylesheet" href="css/kd.css" />
+    <style>
+      /* --- Gaya Badge Kustom --- */
+      .custom-badge {
+        display: flex; /* Menggunakan Flexbox untuk tata letak internal */
+        align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+        background-color: #000000;
+        border-radius: 25px; /* Membuat sudut membulat untuk tampilan chip */
+        padding: 5px 15px 5px 5px; /* Padding: atas, kanan, bawah, kiri (lebih kecil di kiri untuk avatar) */
+        margin-bottom: 20px; /* Jarak antar badge */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        font-size: 16px;
+        color: #ffffff;
+        gap: 8px; /* Jarak antar item flex (avatar, konten, close) */
+        max-width: fit-content; /* Agar badge menyesuaikan lebar kontennya */
+      }
+
+      /* Gaya untuk Avatar */
+      .badge-avatar {
+        width: 40px; /* Ukuran avatar */
+        height: 40px; /* Ukuran avatar */
+        border-radius: 50%; /* Membuat gambar avatar bulat */
+        object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+        flex-shrink: 0; /* Mencegah avatar menyusut */
+      }
+
+      /* Gaya untuk Konten / Caption */
+      .badge-content {
+        white-space: nowrap; /* Mencegah teks memecah baris */
+        overflow: hidden; /* Menyembunyikan teks yang meluap */
+        text-overflow: ellipsis; /* Menambahkan elipsis jika teks terlalu panjang */
+        padding: 0 5px; /* Sedikit padding di sekitar teks */
+      }
+
+      /* Gaya untuk Tombol Close */
+      .badge-close {
+        background: none; /* Hapus latar belakang default tombol */
+        border: none; /* Hapus border default tombol */
+        color: #666; /* Warna ikon close */
+        font-size: 20px; /* Ukuran ikon close */
+        line-height: 1; /* Pastikan ikon tidak ada padding ekstra */
+        cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+        margin-left: 5px; /* Sedikit jarak dari konten */
+        padding: 0 5px; /* Padding agar area klik lebih nyaman */
+        transition: color 0.2s ease;
+        flex-shrink: 0; /* Mencegah tombol close menyusut */
+      }
+
+      .badge-close:hover {
+        color: #e74c3c; /* Warna merah saat di-hover */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="container">
+        <div class="menu">
+          <h3 class="nav-brand">KD20</h3>
+          <ul class="nav-menu">
+            <li class="nav-list"><a href="index.html">Home</a></li>
+            <li class="nav-list"><a href="story.html">Struktur</a></li>
+            <li class="nav-list"><a href="team.html">Team</a></li>
+            <li class="nav-list"><a href="kd.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN TEAM -->
+    <main id="main">
+      <div class="container">
+        <div class="kolom1">
+          <h1 class="top-judul">The Members</h1>
+          <!-- <button type="button" class="klik">Lelaki</button> -->
+          <!-- <button type="button" class="klik">Wanita</button> -->
+        </div>
+        <div class="container">
+          <table class="tabel" border="0" cellpadding="50" cellspacing="0">
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Zufaldi Risyad</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ahmad Alhazanawi</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ahmad Kurniawan</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Aqram Alhidayatullah</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Agung Setiawan</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Saiful Rahman</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Ikram Odhe</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Yadin Anwar</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Asnal</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Nazarudin</td>
+            </tr>
+          </table>
+          <table class="tabel" border="0" cellpadding="50" cellspacing="0">
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Joko Santoso</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Lina Marlina</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Ahmad Zulkifli</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Sarah Amelia</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Yusuf Hidayat</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Fitriani</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>Rendy Saputra</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Desi Anggraini</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Tommy Wijaya</td>
+            </tr>
+          </table>
+          <table class="tabel" border="0" cellpadding="50" cellspacing="0">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20</td>
+                <td>Rina Kartika</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Andi Saputra</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>Siti Nurhaliza</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>Rizky Ramadhan</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>Dewi Lestari</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>Fajar Maulana</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>Nur Aini</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>Ilham Fauzi</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>Melati Putri</td>
+              </tr>
+              <tr>
+                <td>29</td>
+                <td>Bayu Pratama</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Tutup MAIN -->
+      </div>
+    </main>
+  </body>
+</html>

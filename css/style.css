@@ -1,0 +1,171 @@
+/* --- Gaya Badge Kustom --- */
+.custom-badge {
+  display: flex; /* Menggunakan Flexbox untuk tata letak internal */
+  align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+  background-color: #000000;
+  border-radius: 25px; /* Membuat sudut membulat untuk tampilan chip */
+  padding: 5px 10px 5px 5px; /* Padding: atas, kanan, bawah, kiri (lebih kecil di kiri untuk avatar) */
+  margin-bottom: 20px; /* Jarak antar badge */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  color: #ffffff;
+  gap: 8px; /* Jarak antar item flex (avatar, konten, close) */
+  max-width: fit-content; /* Agar badge menyesuaikan lebar kontennya */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-badge:hover{
+  transform: scale(1.1);
+}
+
+/* Gaya untuk Avatar */
+.badge-avatar {
+  width: 40px; /* Ukuran avatar */
+  height: 40px; /* Ukuran avatar */
+  border-radius: 50%; /* Membuat gambar avatar bulat */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+  flex-shrink: 0; /* Mencegah avatar menyusut */
+}
+
+/* Gaya untuk Konten / Caption */
+.badge-content {
+  white-space: nowrap; /* Mencegah teks memecah baris */
+  overflow: hidden; /* Menyembunyikan teks yang meluap */
+  text-overflow: ellipsis; /* Menambahkan elipsis jika teks terlalu panjang */
+  padding: 0 5px; /* Sedikit padding di sekitar teks */
+}
+
+/* Gaya untuk Tombol Close */
+.badge-close {
+  background: none; /* Hapus latar belakang default tombol */
+  border: none; /* Hapus border default tombol */
+  color: #666; /* Warna ikon close */
+  font-size: 20px; /* Ukuran ikon close */
+  line-height: 1; /* Pastikan ikon tidak ada padding ekstra */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  margin-left: 5px; /* Sedikit jarak dari konten */
+  padding: 0 5px; /* Padding agar area klik lebih nyaman */
+  transition: color 0.2s ease;
+  flex-shrink: 0; /* Mencegah tombol close menyusut */
+}
+
+.badge-close:hover {
+  color: #e74c3c; /* Warna merah saat di-hover */
+}
+
+/* BATAS  */
+article#kartu div.container {
+  width: 85%;
+  display: grid;
+  justify-content: space-around;
+}
+.flashcard {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  perspective: 1200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flashcard.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.box {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.box-front {
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.box-back {
+  text-align: center;
+  align-items: center;
+  background-color: rgb(105, 105, 105);
+  transform: rotateY(180deg);
+}
+
+.box img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tombol "i" */
+.flip-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.alt-img {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Animasi Gambar Back */
+.gambar-back {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+  align-self: center;
+}
+
+.gambar-back.anim-out {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.gambar-back.anim-in {
+  opacity: 1;
+  transform: scale(1);
+}
+.gambar-back.anim-in {
+  box-shadow: 0 0 12px rgba(0, 150, 255, 0.4);
+}
+
+.alt-img {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  letter-spacing: 2px;
+  transform: translateY(0);
+}
+
+.alt-img.anim-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.alt-img.anim-in {
+  opacity: 1;
+  transform: translateY(0);
+}
