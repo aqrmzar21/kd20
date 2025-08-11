@@ -233,10 +233,10 @@ section#divisi .container {
     transform: translateY(0px);
   }
   30% {
-    transform: translateY(-7px);
+    transform: translateY(-20px);
   }
   60% {
-    transform: translateY(5px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0px);
@@ -270,15 +270,6 @@ td {
   font-size: 16px;
   letter-spacing: 1px; /* jarak antar huruf saat hover */
 }
-/* @keyframes typing {
-  from { width: 0 }
-  to { width: 80% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: white }
-  50% { border-color: black }
-} */
 
 .gambar-logo {
   width: 60%;
