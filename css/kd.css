@@ -233,10 +233,10 @@ section#divisi .container {
     transform: translateY(0px);
   }
   30% {
-    transform: translateY(-7px);
+    transform: translateY(-17px);
   }
   60% {
-    transform: translateY(5px);
+    transform: translateY(17px);
   }
   100% {
     transform: translateY(0px);
