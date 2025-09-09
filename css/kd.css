@@ -1,6 +1,6 @@
 @font-face {
   font-family: "American";
-  src: url("../asset/American-Captain.woff") format("woff"); /* Perbaikan: Gunakan quotes untuk URL */
+  src: url("../asset/font/American-Captain.woff") format("woff"); /* Perbaikan: Gunakan quotes untuk URL */
 }
 
 * {
