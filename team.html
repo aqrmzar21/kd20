@@ -5,57 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KD20 | History</title>
     <link rel="stylesheet" href="css/kd.css" />
-    <style>
-      /* --- Gaya Badge Kustom --- */
-      .custom-badge {
-        display: flex; /* Menggunakan Flexbox untuk tata letak internal */
-        align-items: center; /* Menyelaraskan item secara vertikal di tengah */
-        background-color: #000000;
-        border-radius: 25px; /* Membuat sudut membulat untuk tampilan chip */
-        padding: 5px 15px 5px 5px; /* Padding: atas, kanan, bawah, kiri (lebih kecil di kiri untuk avatar) */
-        margin-bottom: 20px; /* Jarak antar badge */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-        font-size: 16px;
-        color: #ffffff;
-        gap: 8px; /* Jarak antar item flex (avatar, konten, close) */
-        max-width: fit-content; /* Agar badge menyesuaikan lebar kontennya */
-      }
-
-      /* Gaya untuk Avatar */
-      .badge-avatar {
-        width: 40px; /* Ukuran avatar */
-        height: 40px; /* Ukuran avatar */
-        border-radius: 50%; /* Membuat gambar avatar bulat */
-        object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
-        flex-shrink: 0; /* Mencegah avatar menyusut */
-      }
-
-      /* Gaya untuk Konten / Caption */
-      .badge-content {
-        white-space: nowrap; /* Mencegah teks memecah baris */
-        overflow: hidden; /* Menyembunyikan teks yang meluap */
-        text-overflow: ellipsis; /* Menambahkan elipsis jika teks terlalu panjang */
-        padding: 0 5px; /* Sedikit padding di sekitar teks */
-      }
-
-      /* Gaya untuk Tombol Close */
-      .badge-close {
-        background: none; /* Hapus latar belakang default tombol */
-        border: none; /* Hapus border default tombol */
-        color: #666; /* Warna ikon close */
-        font-size: 20px; /* Ukuran ikon close */
-        line-height: 1; /* Pastikan ikon tidak ada padding ekstra */
-        cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
-        margin-left: 5px; /* Sedikit jarak dari konten */
-        padding: 0 5px; /* Padding agar area klik lebih nyaman */
-        transition: color 0.2s ease;
-        flex-shrink: 0; /* Mencegah tombol close menyusut */
-      }
-
-      .badge-close:hover {
-        color: #e74c3c; /* Warna merah saat di-hover */
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav id="nav">
